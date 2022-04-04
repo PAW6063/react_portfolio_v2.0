@@ -6,7 +6,6 @@ import {
   Link
 } from "react-router-dom";
 
-import logo from "../../logo.png";
 import "./Navbar.css";
 
 
@@ -14,22 +13,27 @@ import "./Navbar.css";
 export default function Navbar() {
   return (
     <div className="navbar">
-        <button>
-            <i></i>
-        </button>
+        <Link>
+            <button>
+                <i></i>
+            </button>
+        </Link>
         <ul>
-            <li>
-                <a>About</a>
-            </li>
-            <li>
-                <a>Portfolio</a>
-            </li>
-            <li>
-                <a>Contact</a>
-            </li>
-            <li>
-                <a>Resumé</a>
-            </li>
+            <Link>
+                <li></li>
+            </Link>
+            <Link>
+                <li></li>
+            </Link>
+            <Link>
+                <li></li>
+            </Link>
+            <Link>
+                <li></li>
+            </Link>
+            <Link>
+                <li></li>
+            </Link>
         </ul>
     </div>
   );

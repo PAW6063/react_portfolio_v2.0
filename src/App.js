@@ -9,17 +9,24 @@ import Contact from "./pages/Contact/Contact.js";
 import Resume from "./pages/Resume/Resume.js";
 import Error from "./pages/Error/Error.js";
 
+import Header from "./components/Header/Header.js";
+import Footer from "./components/Footer/Footer.js";
+
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/portfolio" component={Portfolio} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/resumé" component={Resume} />
-        <Route render={Error} />
-      </Switch>
+      <div className="App">
+        <Header/>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/portfolio" component={Portfolio} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/resumé" component={Resume} />
+          <Route render={Error} />
+        </Switch>
+        <Footer/>
+      </div>
     </Router>
   );
 }

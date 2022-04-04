@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import logo from "../../logo.png";
 import "./About.css";
 
 export default function About() {
   return (
     <div className="about">
-      <img />
-      <h1>{"<About Me/>"}</h1>
-      <p>
+      <img src="" className="about-picture" alt="A picture of me." />
+
+      <h1 className="about-header h-1" >{"<About Me/>"}</h1>
+      <p className="about-p p-1">
         Full stack web developer recently completed UT Austin coding bootcamp to
         receive my certificate. Through completing this bootcamp, I have become
         familiar with technologies such as MongoDB, React.js, JavaScript, CSS,
@@ -21,8 +21,9 @@ export default function About() {
         new insights. I look forward to honing my skills through new projects as
         my post bootcamp journey begins.
       </p>
-      <h2>Things I know...</h2>
-      <p>
+
+      <h2 className="about-h h-2" >Things I know...</h2>
+      <p className="about-p p-2">
         Through completing the UT Austin coding bootcamp course I gain the
         knowledge of Full-Stack development. Skills such as ( HTML, CSS,
         Javascript, Node.js, Express.js, React.js, MongoDB, mySQL, GraphQL, ex.
@@ -46,8 +47,9 @@ export default function About() {
         Now I am currently working on expanding my skill set by learning C# and
         .NET on my own through online resources.
       </p>
-      <h2>What my interest are...</h2>
-      <p>
+
+      <h2 className="about-h h-3" >What my interest are...</h2>
+      <p className="about-p p-3">
         I love learning to technologies to be able to apply to new projects, but
         my passion is virtual reality with all of the potiental it has! Virtual
         Reality ( VR ) is what lead me down the path of programming and

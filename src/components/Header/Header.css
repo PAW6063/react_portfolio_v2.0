@@ -1,0 +1,18 @@
+:root {
+    --header-bg: rgb(59, 60, 59);
+}
+
+
+.header {
+    height: 10vh;
+    background-color: var(--header-bg);
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    height: 9vh;
+}

@@ -1,0 +1,60 @@
+:root {
+    --about-header-color: rgb(126, 255, 255);
+    --about-h-color: rgb(126, 255, 255);
+    --about-p-color: rgb(255, 255, 255);
+    --about-link-color: rgb(252, 154, 84);
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin: auto 5vw;
+
+    font-family: "Exo 2";
+    font-style: italic;
+}
+
+.about-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.about-header {
+    color: var(--about-header-color);
+    align-self: flex-start;
+}
+
+.about-h {
+    color: var(--about-h-color);
+    align-self: flex-start;
+}
+
+.about-p {
+    color: var(--about-p-color);
+}
+
+.h-2 {
+
+}
+
+.h-3 {
+
+}
+
+.p-1 {
+
+}
+
+.p-2 {
+    
+}
+
+.p-3 {
+    
+}

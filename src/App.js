@@ -16,16 +16,30 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header/>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={Portfolio} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path="/resumé" component={Resume} />
+          <Route exact path="/about">
+            <Header/>
+            <About/>
+            <Footer/>
+          </Route>
+          <Route exact path="/portfolio">
+            <Header/>
+            <Portfolio/>
+            <Footer/>
+          </Route>
+          <Route exact path="/contact">
+            <Header/>
+            <Contact/>
+            <Footer/>
+          </Route>
+          <Route exact path="/resumé">
+            <Header/>
+            <Resume/>
+            <Footer/>
+          </Route>
           <Route render={Error} />
         </Switch>
-        <Footer/>
       </div>
     </Router>
   );

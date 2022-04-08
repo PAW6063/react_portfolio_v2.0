@@ -6,6 +6,8 @@ import {
   Link
 } from "react-router-dom";
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import "./Navbar.css";
 
 
@@ -15,24 +17,21 @@ export default function Navbar() {
     <div className="navbar">
         <Link>
             <button>
-                <i></i>
+                <FontAwesomeIcon icon="fa-solid fa-bars" />
             </button>
         </Link>
         <ul>
-            <Link>
-                <li></li>
+            <Link to="/about">
+                <li>About</li>
             </Link>
-            <Link>
-                <li></li>
+            <Link to="/portfolio">
+                <li>Portfolio</li>
             </Link>
-            <Link>
-                <li></li>
+            <Link to="/contact">
+                <li>Contact</li>
             </Link>
-            <Link>
-                <li></li>
-            </Link>
-            <Link>
-                <li></li>
+            <Link to="/resume">
+                <li>Resume</li>
             </Link>
         </ul>
     </div>

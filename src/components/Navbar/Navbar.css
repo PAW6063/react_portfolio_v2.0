@@ -1,13 +1,83 @@
-:root{
-    --nav-bg: rgb(59, 60, 59);
+:root {
+  --nav-bg: rgb(59, 60, 59);
+  --nav-link-color: rgb(255, 255, 255);
+  --mobile-nav-bg: rgb(71, 71, 71);
+  --button-bg: rgb(41, 41, 41);
+  --button-color: rgb(255, 255, 255);
+  --button-border: rgb(0, 0, 0);
+}
+
+.navbar-container {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+
+  background-color: var(--nav-bg);
 }
 
 .navbar {
-    position: fixed;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
     bottom: 0;
-    left: 0;
     height: 10vh;
     width: 100vw;
-
+  
     background-color: var(--nav-bg);
+  }
+
+.nav-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 0.25em;
+  padding: 0;
+  margin: 0;
+  width: 3em;
+  height: 3em;
+  background-color: var(--button-bg);
+  border-color: var(--button-border);
+}
+
+.nav-button-icon {
+  color: var(--button-color);
+  font-size: 2em;
+}
+
+.nav-link-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  position: absolute;
+  bottom: 100%;
+  width: 100%;
+  z-index: -2;
+  height: 40vh;
+  padding: 0;
+  margin: 0;
+  background-color: var(--mobile-nav-bg);
+}
+
+.nav-link {
+}
+
+.nav-list-item {
+  text-decoration: none;
+  list-style: none;
+  color: var(--nav-link-color);
+  font-family: "Exo 2";
+  font-style: italic;
+  font-size: large;
 }

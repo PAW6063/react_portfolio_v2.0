@@ -35,14 +35,22 @@
   width: 150px;
   height: 50px;
   margin-top: auto;
-}
 
-.home-link {
   text-decoration: none;
   color: var(--home-button-text);
+  font-family: "Exo 2";
   font-style: italic;
   font-weight: bold;
   font-size: larger;
+}
+
+.home-link {
+  background-color: var(--home-button);
+  border-color: var(--home-button-border);
+  border-radius: 25px;
+  width: 150px;
+  height: 50px;
+  margin-top: auto;
 }
 
 .home-heading {

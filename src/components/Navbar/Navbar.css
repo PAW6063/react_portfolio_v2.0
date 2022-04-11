@@ -1,7 +1,7 @@
 :root {
   --nav-bg: rgb(59, 60, 59);
   --nav-link-color: rgb(255, 255, 255);
-  --mobile-nav-bg: rgb(71, 71, 71);
+  --mobile-nav-bg: hsl(0, 0%, 28%);
   --button-bg: rgb(41, 41, 41);
   --button-color: rgb(255, 255, 255);
   --button-border: rgb(0, 0, 0);
@@ -43,15 +43,15 @@
   border-radius: 0.25em;
   padding: 0;
   margin: 0;
-  width: 3em;
-  height: 3em;
+  width: 7vh;
+  height: 7vh;
   background-color: var(--button-bg);
   border-color: var(--button-border);
 }
 
 .nav-button-icon {
   color: var(--button-color);
-  font-size: 2em;
+  font-size: 5.5vh;
 }
 
 .nav-link-list {
@@ -68,6 +68,8 @@
   padding: 0;
   margin: 0;
   background-color: var(--mobile-nav-bg);
+  /* border: 1px solid black;
+  border-color: var(--button-border); */
 }
 
 .nav-link {

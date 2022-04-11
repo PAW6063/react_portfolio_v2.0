@@ -73,6 +73,15 @@
 .nav-link {
 }
 
+.mobile-nav[data-visible="true"] {
+  transform: translateY(0%);
+}
+
+.mobile-nav {
+  transform: translateY(100%);
+  transition: transform 500ms ease-out;
+}
+
 .nav-list-item {
   text-decoration: none;
   list-style: none;

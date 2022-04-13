@@ -1,6 +1,6 @@
 :root {
-    --footer-bg-color: /*rgb(215, 215, 215);
-    --icon-bg-color: */rgb(255, 255, 255);
+    /* --footer-bg-color: rgb(215, 215, 215); */
+    --footer-bg-color:rgb(255, 255, 255);
     --twitter-color: rgb(0, 172, 238);
     --github-color: rgb(23, 21, 21);
     --linkedin-color: rgb(14, 118, 168);

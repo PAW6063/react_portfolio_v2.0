@@ -1,3 +1,104 @@
 :root {
+    --contact-header-color: rgb(126, 255, 255);
+    --contact-subheader-color: rgb(255, 255, 255);
+    --contact-link-color: rgb(252, 154, 84);
+    --contact-input-bg:  rgb(97, 97, 97);
+    --contact-input-border: rgb(151, 151, 151);
+    --contact-button: rgb(97, 97, 97);
+    --contact-button-border: rgba(126, 255, 255, 0.5);
+    --contact-button-color: rgb(126, 255, 255);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    margin: 5vh 5vw;
+
+    font-family: "Exo 2";
+    font-style: italic;
+}
+
+.main-header {
+
+}
+
+.contact-header {
+    color: var(--contact-header-color);
+    align-self: flex-start;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+
+    width: 70vw;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.info-header {
+    color: var(--contact-subheader-color);
+    align-self: flex-start;
+}
+
+.info-link {
+    color: var(--contact-link-color);
+    text-decoration: none;
     
+}
+
+.info-list-item {
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: center;
+
+    width: 70vw;
+    height: 40vh;
+    margin-top: 2vh;
+}
+
+.form-label {
+    color: var(--contact-subheader-color);
+
+    margin: 0;
+}
+
+.form-input {
+    background-color: var(--contact-input-bg);
+    border: 1px solid var(--contact-input-border);
+    color: var(--contact-subheader-color);
+
+    border-radius: .25em;
+    max-width: 600px;
+    width: 100%;
+    padding: 2px 5px;
+}
+
+.form-button {
+    max-width: 300px;
+    width: 25vw;
+    
+    border-radius: .25em;
+
+    background-color: var(--contact-button);
+    border: 1.5px solid var(--contact-button-border);
+    color: var(--contact-button-color);
+
+    font-family: "Exo 2";
+    font-style: italic;
+    text-align: center;
+    padding: 0;
 }

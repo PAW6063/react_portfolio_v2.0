@@ -39,7 +39,7 @@ export default function Navbar() {
           <Link to="/contact" className="nav-link link-3" onClick={toggleNav}>
             <li className="nav-list-item">Contact</li>
           </Link>
-          <Link to="/resume" className="nav-link link-4" onClick={toggleNav}>
+          <Link to="/resumé" className="nav-link link-4" onClick={toggleNav}>
             <li className="nav-list-item">Resumé</li>
           </Link>
         </ul>

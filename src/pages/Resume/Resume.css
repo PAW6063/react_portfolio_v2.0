@@ -1,0 +1,81 @@
+:root {
+    --resume-header-color: rgb(126, 255, 255);
+    --resume-sub-header-color: rgb(255, 255, 255);
+    --resume-buttom-bg:  rgb(126, 255, 255);
+    --resume-list-item: rgb(255, 255, 255);
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    margin: 5vh 5vw;
+    min-height: 80vh;
+
+    font-family: "Exo 2";
+    font-style: italic;
+}
+
+.resume-header {
+    color: var(--resume-header-color);
+    align-self: flex-start;
+}
+
+.resume-sub-header {
+    color: var(--resume-sub-header-color);
+}
+
+.resume-download {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    color: black;
+    background-color: var(--resume-buttom-bg);
+    border-radius: .5em;
+    border: 1px solid black;
+    padding: .25em;
+}
+
+.resume-resume {
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1em;
+}
+
+.resume-p {
+    margin: 0;
+    color: var(--resume-buttom-bg);
+}
+
+.resume-icon {
+    color: black;
+    height: 4vh;
+    width: 4vh;
+}
+
+.resume-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+    width: 70vw;
+    padding: 0;
+    list-style-position: inside;
+}
+
+.resume-list-item {
+    color: var(--resume-list-item);
+}

@@ -1,67 +1,48 @@
 import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+  faDownload,
+  faArrowDownToBracket,
+} from "@fortawesome/free-solid-svg-icons";
+// import {
+//   faLinkedin,
+//   faLinkedinIn,
+//   faGithub,
+//   faTwitter,
+// } from "@fortawesome/free-brands-svg-icons";
 
-import logo from "../../logo.png";
 import "./Resume.css";
-
-
 
 export default function Resume() {
   return (
     <div className="resume">
-        <h1>{"<Resumé/>"}</h1>
+      <h1 className="resume-header">{"<Resumé/>"}</h1>
 
-        <h3>Hiring?? Here's my resumé!</h3>
-        <a>
-            <i></i>
-        </a>
+      <h3 className="resume-sub-header">Hiring?? Here's my resumé!</h3>
+      <div className="resume-resume">
+        <p className="resume-p">Resumé</p>
+        <button className="resume-download">
+          <FontAwesomeIcon icon={faDownload} className="resume-icon" />
+        </button>
+      </div>
 
-        <h2>Technologies</h2>
-        <ul>
-            <li>
-                Node.js
-            </li>
-            <li>
-                Express.js
-            </li>
-            <li>
-                MongoDB
-            </li>
-            <li>
-                GraphQL
-            </li>
-            <li>
-                mySQL
-            </li>
-            <li>
-                C
-            </li>
-            <li>
-                C++
-            </li>
-        </ul>
-        <ul>
-            <li>
-                React.js
-            </li>
-            <li>
-                HTML
-            </li>
-            <li>
-                CSS
-            </li>
-            <li>
-                Javascript
-            </li>
-            <li>
-                Bootstrap
-            </li>
-        </ul>
+      <h2 className="resume-header">Technologies</h2>
+      <ul className="resume-list">
+        <li className="resume-list-item">React.js</li>
+        <li className="resume-list-item">HTML</li>
+        <li className="resume-list-item">CSS</li>
+        <li className="resume-list-item">Javascript</li>
+        <li className="resume-list-item">Bootstrap</li>
+        <li className="resume-list-item">Node.js</li>
+        <li className="resume-list-item">Express.js</li>
+        <li className="resume-list-item">MongoDB</li>
+        <li className="resume-list-item">GraphQL</li>
+        <li className="resume-list-item">mySQL</li>
+        <li className="resume-list-item">C</li>
+        <li className="resume-list-item">C++</li>
+      </ul>
     </div>
   );
 }

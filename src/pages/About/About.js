@@ -6,7 +6,7 @@ import "./About.css";
 export default function About() {
   return (
     <div className="about">
-      <img src="" className="about-picture" alt="A picture of me." />
+      <img src="./logo192.png" className="about-picture" alt="A picture of me." />
 
       <h1 className="about-header h-1" >{"<About Me/>"}</h1>
       <p className="about-p p-1">

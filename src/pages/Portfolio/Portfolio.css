@@ -1,0 +1,61 @@
+:root {
+    --portfolio-header-color: rgb(126, 255, 255);
+    --github-lines: rgb(215, 215, 215);
+    --github-icon-bg: rgb(215, 215, 215);
+    --github-icon-color: rgb(23, 21, 21);
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    margin: 5vh 5vw;
+    min-height: 80vh;
+}
+
+.portfolio-header {
+    color: var(--portfolio-header-color);
+    align-self: flex-start;
+}
+
+.github-link-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.lines {
+    color: var(--github-lines);
+    width: 40%;
+}
+
+.github-link {
+    background-color: var(--github-icon-bg);
+    border-radius: 1em;
+    width: 10%;
+    text-align: center;
+    color: var(--github-icon-color);
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-size: large;
+    font-weight: 1000;
+    font-size: x-large;
+}
+
+.github-icon {
+    color: var(--github-icon-color);
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}

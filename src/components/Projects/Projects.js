@@ -3,13 +3,11 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./Projects.css";
 
-export default function Projects() {
+export default function Projects({project}) {
     return (
         <div className="project">
-            <Link className="project-link">
-                <img className="project-image"/>
-                <h1 className="project-name"></h1>
-            </Link>
+            <img className="project-image" src={project.image}/>
+            <h1 className="project-title">{project.title}</h1>
         </div>
     );
 }

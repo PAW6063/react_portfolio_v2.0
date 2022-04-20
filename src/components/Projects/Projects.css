@@ -1,0 +1,43 @@
+:root {
+    --project-border-color: rgb(215, 215, 215);
+    --project-bg: rgb(71, 71, 71);
+    --project-bg-active: #616161;
+    --project-title-color: rgb(252, 154, 84);
+    --project-border: rgb(151, 151, 151);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    border: 2px solid var(--project-border);
+    border-radius: 15%;
+    
+    width: 300px;
+    height: 300px;
+    margin: 2em 0;
+    overflow: hidden;
+    background-color: var(--project-bg);
+}
+
+.project:hover {
+    background-color: var(--project-bg-active);
+}
+
+.project-image {
+    width: 300px;
+    top: 0;
+    border-bottom: 2px solid var(--project-border);
+}
+
+.project-title {
+    color: var(--project-title-color);
+    text-align: center;
+    margin: auto;
+    font-size: 1.5em;
+    width: 100%;
+}

@@ -6,7 +6,7 @@ import "./Portfolio.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-// import projectList from ;
+import projectList from "../../utils/ProjectList.js";
 import Projects from "../../components/Projects/Projects.js";
 
 export default function Portfolio() {
@@ -22,15 +22,9 @@ export default function Portfolio() {
         <hr className="lines" />
       </div>
       <div className="project-list">
-        {/* {projectList.map((project, index) => {
+        {projectList.map((project, index) => {
           return <Projects key={index} project={project} />;
-        })} */}
-        <div className="project">
-            <Link className="project-link">
-                <img className="project-image"/>
-                <h1 className="project-name"></h1>
-            </Link>
-        </div>
+        })}
       </div>
     </div>
   );

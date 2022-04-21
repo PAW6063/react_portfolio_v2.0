@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./About.css";
 
 export default function About() {
   return (
     <div className="about">
-      <img src="./logo192.png" className="about-picture" alt="A picture of me." />
+      <img src="./logo192.png" className="about-picture" alt="This is me." />
 
       <h1 className="about-header h-1" >{"<About Me/>"}</h1>
       <p className="about-p p-1">
@@ -32,7 +32,8 @@ export default function About() {
         <a
           className="github-projects"
           href="https://github.com/PAW6063?tab=repositories"
-          target="_blank"
+          target="_blank" 
+          rel="noreferrer"
         >
           projects
         </a>{" "}

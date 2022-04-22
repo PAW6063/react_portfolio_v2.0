@@ -15,9 +15,12 @@ export default function Portfolio() {
       <h1 className="portfolio-header">{"<Portfolio/>"}</h1>
       <div className="github-link-container">
         <hr className="lines" />
-        <Link className="github-link" to="">
-          <FontAwesomeIcon icon={faGithub} className="github-icon" />
-           {" "}Github
+        <Link
+          to={{ pathname: "https://github.com/PAW6063" }}
+          target="_blank"
+          className="github-link"
+        >
+          <FontAwesomeIcon icon={faGithub} className="github-icon" /> Github
         </Link>
         <hr className="lines" />
       </div>

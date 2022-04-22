@@ -10,12 +10,22 @@ export default function Contact() {
 
       <ul className="info-list">
         <h3 className="info-header">LinkedIn</h3>
-        <Link className="info-link">
+        <Link
+          to={{
+            pathname: "https://www.linkedin.com/in/phillip-welch-67a533214/",
+          }}
+          target="_blank"
+          className="info-link"
+        >
           <li className="info-list-item">phillip-welch-67a533214/</li>
         </Link>
 
         <h3 className="info-header">Email</h3>
-        <Link className="info-link">
+        <Link
+          to="#"
+          onClick={() => (window.location = "mailto:phillip.w3lch455@gmail.com")}
+          className="info-link"
+        >
           <li className="info-list-item">phillip.w3lch455@gmail.com</li>
         </Link>
       </ul>

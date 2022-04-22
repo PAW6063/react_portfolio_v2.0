@@ -52,7 +52,13 @@
 .info-link {
     color: var(--contact-link-color);
     text-decoration: none;
-    
+    opacity: .75;
+}
+
+.info-link:hover {
+    color: var(--contact-link-color);
+    text-decoration: none;
+    opacity: 1;
 }
 
 .info-list-item {

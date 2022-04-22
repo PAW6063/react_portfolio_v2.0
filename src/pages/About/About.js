@@ -6,7 +6,7 @@ import "./About.css";
 export default function About() {
   return (
     <div className="about">
-      <img src="./logo192.png" className="about-picture" alt="This is me." />
+      <img src="./assets/images/me.jpg" className="about-picture" alt="This is me." />
 
       <h1 className="about-header h-1" >{"<About Me/>"}</h1>
       <p className="about-p p-1">
@@ -30,7 +30,7 @@ export default function About() {
         ) giving me all the knowledge to build full stack web applications. From
         all the{" "}
         <a
-          className="github-projects"
+          className="about-github-projects"
           href="https://github.com/PAW6063?tab=repositories"
           target="_blank" 
           rel="noreferrer"

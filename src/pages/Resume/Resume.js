@@ -3,8 +3,8 @@ import React from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faDownload/* , 
-  faArrowDownToBracket, */
+  faDownload /* , 
+  faArrowDownToBracket, */,
 } from "@fortawesome/free-solid-svg-icons";
 // import {
 //   faLinkedin,
@@ -23,9 +23,13 @@ export default function Resume() {
       <h3 className="resume-sub-header">Hiring?? Here's my resumé!</h3>
       <div className="resume-resume">
         <p className="resume-p">Resumé</p>
-        <button className="resume-download">
+      <a
+          className="resume-download"
+          href="./assets/resume/PhillipWelch.pdf"
+          download="PhillipWelch.pdf"
+        >
           <FontAwesomeIcon icon={faDownload} className="resume-icon" />
-        </button>
+        </a>
       </div>
 
       <h2 className="resume-header">Technologies</h2>

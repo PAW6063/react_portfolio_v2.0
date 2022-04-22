@@ -1,11 +1,54 @@
 :root {
-
+    --error-header-color: rgb(126, 255, 255);
+    --error-subheader-color: rgb(255, 255, 255);
+    --contact-link-color: rgb(252, 154, 84);
+    --contact-input-bg:  rgb(97, 97, 97);
+    --contact-input-border: rgb(151, 151, 151);
+    --contact-button: rgb(97, 97, 97);
+    --contact-button-border: rgba(126, 255, 255, 0.5);
+    --contact-button-color: rgb(126, 255, 255);
 }
 
 .error {
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 90vh;
+    font-family: "Exo 2";
+    font-style: italic;
+    font-weight: bold;
+    gap: 3vh;
 }
 
 .error-header {
-    
+    color: var(--error-header-color);
+    font-size: 12vh;
 }
+
+.error-subheader {
+    color: var(--error-subheader-color);
+    text-align: center;
+}
+
+.error-button {
+    background-color: var(--home-button);
+    border-color: var(--home-button-border);
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+  
+    text-decoration: none;
+    color: var(--home-button-text);
+    font-size: larger;
+  }
+  
+  .error-link {
+    background-color: var(--home-button);
+    border-color: var(--home-button-border);
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+  }

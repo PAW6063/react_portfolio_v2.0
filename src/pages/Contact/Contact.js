@@ -30,7 +30,7 @@ export default function Contact() {
         </Link>
       </ul>
 
-      <h2 className="contact-header">Message Me!</h2>
+      <h2 className="contact-header">Message Me!<span className="under-maintance">(Under Maintance)</span></h2>
       <form className="contact-form">
         <label className="form-label name-label">Name</label>
         <input className=" form-input name-input" />

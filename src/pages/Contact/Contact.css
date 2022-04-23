@@ -9,6 +9,11 @@
     --contact-button-color: rgb(126, 255, 255);
 }
 
+.under-maintance {
+    color: red;
+    font-size: small;
+}
+
 .contact {
     display: flex;
     flex-direction: column;

@@ -1,9 +1,15 @@
 :root {
     --project-border-color: rgb(215, 215, 215);
     --project-bg: rgb(71, 71, 71);
-    --project-bg-active: #616161;
+    --project-bg-active: rgb(97, 97, 97);
     --project-title-color: rgb(252, 154, 84);
     --project-border: rgb(151, 151, 151);
+    --modal-bg: rgb(41, 41, 41);
+    --modal-title: rgb(252, 154, 84);
+    --modal-subheader: rgb(126, 255, 255);
+    --modal-icon: rgb(23, 21, 21);
+    --modal-icon-bg:rgb(255, 255, 255);
+    --modal-text:rgb(255, 255, 255);
 }
 
 .project {
@@ -40,4 +46,96 @@
     margin: auto;
     font-size: 1.5em;
     width: 100%;
+}
+
+/* Modal section below! */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    overflow: auto;
+    background-color: var(--modal-bg);
+}
+
+.modal-content {
+    background-color: var(--modal-bg);
+}
+
+.carousel {
+
+}
+
+.modal-img {
+    width: 100vw;
+    max-width: 1300px;
+}
+
+.modal-info {
+    
+    width: 100%;
+}
+
+.modal-title {
+    color: var(--modal-title);
+    align-self: flex-start;
+}
+
+.modal-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.modal-link {
+    text-decoration: none;
+}
+
+.modal-item {
+    list-style: none;
+    text-align: center;
+}
+
+.modal-icon {
+    color: var(--modal-icon-bg);
+    font-size: 5vh;
+    text-align: center;
+}
+
+.modal-context {
+    width: 100%;
+}
+
+.modal-subheader {
+    color: var(--modal-subheader);
+    align-self: flex-start;
+}
+
+.description {
+    color: var(--modal-text);
+    margin: 0;
+}
+
+.tech-stack {
+    
+}
+
+.tech-item {
+    color: var(--modal-subheader);
+    list-style-position: inside;
 }

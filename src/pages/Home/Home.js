@@ -10,6 +10,7 @@ export default function Home() {
       <img src={logo} className="home-logo" alt="logo" />
       <Link to="/about" className="home-link">
         <button className="home-button">Explore</button>
+        <div className="pulse-effect"></div>
       </Link>
       <div className="home-heading">
         <h1 className="home-h1">{"<Developer>"}</h1>

@@ -22,6 +22,16 @@ export default function Navbar() {
     }
   };
 
+  const ScrollToTop = (event) => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant'
+    });
+
+    toggleNav();
+  }
+
   return (
     <div className="navbar-container">
       <nav className="navbar">
@@ -30,16 +40,16 @@ export default function Navbar() {
         </button>
 
         <ul className="nav-link-list mobile-nav" data-visible={navState}>
-          <Link to="/about" className="nav-link link-1" onClick={toggleNav}>
+          <Link to="/about" className="nav-link link-1" onClick={ScrollToTop}>
             <li className="nav-list-item">About</li>
           </Link>
-          <Link to="/portfolio" className="nav-link link-2" onClick={toggleNav}>
+          <Link to="/portfolio" className="nav-link link-2" onClick={ScrollToTop}>
             <li className="nav-list-item">Portfolio</li>
           </Link>
-          <Link to="/contact" className="nav-link link-3" onClick={toggleNav}>
+          <Link to="/contact" className="nav-link link-3" onClick={ScrollToTop}>
             <li className="nav-list-item">Contact</li>
           </Link>
-          <Link to="/resumé" className="nav-link link-4" onClick={toggleNav}>
+          <Link to="/resumé" className="nav-link link-4" onClick={ScrollToTop}>
             <li className="nav-list-item">Resumé</li>
           </Link>
         </ul>

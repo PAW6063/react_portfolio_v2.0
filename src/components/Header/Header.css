@@ -1,9 +1,13 @@
 :root {
-    --header-bg: rgb(59, 60, 59);
+  --header-bg: rgb(59, 60, 59);
 }
 
+.header-logo {
+    height: 9vh;
+  }
 
-.header {
+@media only screen and (max-width: 600px) {
+  .header {
     height: 10vh;
     background-color: var(--header-bg);
 
@@ -11,8 +15,26 @@
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
+  }
+
 }
 
-.header-logo {
-    height: 9vh;
+@media only screen and (min-width: 601px) {
+    .header-logo {
+        margin-left: 5vw;
+    }
+
+    .header {
+        height: 10vh;
+        background-color: var(--header-bg);
+    
+        display: flex;
+        position: sticky;
+        top: 0;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+      }
 }

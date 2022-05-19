@@ -7,6 +7,7 @@
   --button-border: rgb(0, 0, 0);
 }
 
+/* Mobile CSS */
 @media only screen and (max-width: 600px) {
   .navbar-container {
     padding: 0;
@@ -17,6 +18,7 @@
     position: fixed;
     bottom: 0;
     height: 10vh;
+    max-height: 6em;
     width: 100vw;
 
     background-color: var(--nav-bg);
@@ -31,6 +33,7 @@
     position: relative;
     bottom: 0;
     height: 10vh;
+    max-height: 6em;
     width: 100vw;
 
     background-color: var(--nav-bg);
@@ -44,15 +47,15 @@
     border-radius: 0.25em;
     padding: 0;
     margin: 0;
-    width: 7vh;
-    height: 7vh;
+    width: 3em;
+    height: 3em;
     background-color: var(--button-bg);
     border-color: var(--button-border);
   }
 
   .nav-button-icon {
     color: var(--button-color);
-    font-size: 5.5vh;
+    font-size: 2.25em;
   }
 
   .nav-link-list {
@@ -64,13 +67,11 @@
     position: absolute;
     bottom: 100%;
     width: 100%;
-    z-index: -2;
+    z-index: -1;
     height: 40vh;
     padding: 0;
     margin: 0;
     background-color: var(--mobile-nav-bg);
-    /* border: 1px solid black;
-    border-color: var(--button-border); */
   }
 
   .mobile-nav[data-visible="true"] {
@@ -88,10 +89,17 @@
     color: var(--nav-link-color);
     font-family: "Exo 2";
     font-style: italic;
-    font-size: large;
+    font-size: 1.2em;
+  }
+
+  hr{
+    color: black;
+    margin: 0;
+    width: 100%;
   }
 }
 
+/* Desktop CSS */
 @media only screen and (min-width: 601px) {
   .navbar-container {
     display: flex;
@@ -141,6 +149,6 @@
     color: var(--nav-link-color);
     font-family: "Exo 2";
     font-style: italic;
-    font-size: large;
+    font-size: 1.5em;
   }
 }

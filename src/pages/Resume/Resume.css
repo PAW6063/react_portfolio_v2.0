@@ -1,83 +1,107 @@
 :root {
-    --resume-header-color: rgb(126, 255, 255);
-    --resume-sub-header-color: rgb(255, 255, 255);
-    --resume-buttom-bg:  rgb(126, 255, 255);
-    --resume-list-item: rgb(255, 255, 255);
+  --resume-header-color: rgb(126, 255, 255);
+  --resume-sub-header-color: rgb(255, 255, 255);
+  --resume-buttom-bg: rgb(126, 255, 255);
+  --resume-list-item: rgb(255, 255, 255);
+}
+
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+}
+/* Desktop CSS */
+@media only screen and (min-width: 601px) {
 }
 
 .resume {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
 
-    margin: 5vh 5vw 8vh 5vw;
-    min-height: 80vh;
+  margin: 5vh auto;
+  min-height: 80vh;
+  width: 70%;
+  max-width: 1000px;
 
-    font-family: "Exo 2";
-    font-style: italic;
+  font-family: "Exo 2";
+  font-style: italic;
 }
 
 .resume-header {
-    color: var(--resume-header-color);
-    align-self: flex-start;
-    margin-top: 3vh;
+  color: var(--resume-header-color);
+  align-self: flex-start;
+  margin-top: 3vh;
 }
 
 .resume-sub-header {
-    color: var(--resume-sub-header-color);
+  color: var(--resume-sub-header-color);
 }
 
 .resume-download {
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 
-    color: black;
-    background-color: var(--resume-buttom-bg);
-    border-radius: .5em;
-    border: 1px solid black;
-    padding: .25em;
+  color: black;
+  background-color: var(--resume-buttom-bg);
+  border-radius: 0.5em;
+  border: 1px solid black;
+  padding: 0.25em;
 }
 
 .resume-resume {
-    display:flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    gap: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 1em;
 }
 
 .resume-p {
-    margin: 0;
-    color: var(--resume-buttom-bg);
-    font-size: xx-large;
+  margin: 0;
+  color: var(--resume-buttom-bg);
+  font-size: xx-large;
 }
 
 .resume-icon {
-    color: black;
-    font-size: xx-large;
+  color: black;
+  font-size: xx-large;
 }
 
 .resume-list {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    align-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
 
-    width: 70vw;
-    padding: 0;
-    list-style-position: inside;
-    font-size: x-large;
+  width: 70vw;
+  padding: 0;
+  list-style-position: inside;
 }
 
-.resume-list-item {
-    color: var(--resume-list-item);
+.resume-table {
+  color: var(--resume-list-item);
+  font-size: x-large;
+  width: 50%;
+}
+
+.resume-thead {
+  color: var(--);
+}
+
+.resume-tbody {
+}
+
+.resume-rows {
+}
+
+.resume-cells {
+  height: 5vh;
 }

@@ -1,12 +1,14 @@
 :root {
-    --portfolio-header-color: rgb(126, 255, 255);
-    --github-lines: rgb(215, 215, 215);
-    --github-icon-bg: rgb(215, 215, 215);
-    --github-active-link: rgb(23, 21, 21);
-    --github-icon-color: rgb(23, 21, 21);
+  --portfolio-header-color: rgb(126, 255, 255);
+  --github-lines: rgb(215, 215, 215);
+  --github-icon-bg: rgb(215, 215, 215);
+  --github-active-link: rgb(23, 21, 21);
+  --github-icon-color: rgb(23, 21, 21);
 }
 
-.portfolio {
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+  .portfolio {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -18,16 +20,14 @@
 
     font-family: "Exo 2";
     font-style: italic;
-}
+  }
 
-.portfolio-header {
+  .portfolio-header {
     color: var(--portfolio-header-color);
     align-self: flex-start;
-    font-size: 5vh;
-    margin: 1em 0;
-}
+  }
 
-.github-link-container {
+  .github-link-container {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -35,47 +35,128 @@
     align-items: center;
     align-content: center;
     width: 100%;
-    
-    margin: 2em 0;
-}
 
-.lines {
+    margin: 2em 0;
+  }
+
+  .github-link {
+    background-color: var(--github-icon-bg);
+    border-radius: 1em;
+    flex-grow: 1;
+    margin: 0 2vw;
+    min-width: 140px;
+    text-align: center;
+    color: var(--github-icon-color);
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-size: 1.5em;
+    font-weight: 1000;
+    font-style: normal;
+  }
+
+  .github-link:hover {
+    color: var(--github-active-link);
+  }
+
+  .github-icon {
+    color: var(--github-icon-color);
+  }
+
+  .lines {
     flex-grow: 4;
     border: 1.5px solid var(--github-lines);
     color: var(--github-lines);
     border-radius: 2px;
     opacity: 1;
-}
+  }
 
-.github-link {
-    background-color: var(--github-icon-bg);
-    border-radius: 1em;
-    flex-grow: 1;
-    margin: 0 2vw;
-    min-width: 120px;
-    text-align: center;
-    color: var(--github-icon-color);
-    text-decoration: none;
-    font-family: "Exo 2";
-    font-size: 3vh;
-    font-weight: 1000;
-    font-style: normal;
-}
-
-.github-link:hover {
-    color: var(--github-active-link);
-}
-
-.github-icon {
-    color: var(--github-icon-color);
-}
-
-.project-list {
+  .project-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     align-content: flex-start;
+    gap: 1em;
     width: 100%;
     min-height: 80vh;
+  }
+}
+/* Desktop CSS */
+@media only screen and (min-width: 601px) {
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    margin: 5vh auto;
+    min-height: 80vh;
+    width: 70%;
+    max-width: 1000px;
+
+    font-family: "Exo 2";
+    font-style: italic;
+  }
+
+  .portfolio-header {
+    color: var(--portfolio-header-color);
+    align-self: center;
+    font-size: 3em;
+  }
+
+  .github-link-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+
+    margin: 2em 0;
+  }
+
+  .github-link {
+    background-color: var(--github-icon-bg);
+    border-radius: 1em;
+    flex-grow: 1;
+    margin: 0 2vw;
+    min-width: 140px;
+    max-width: 350px;
+    text-align: center;
+    color: var(--github-icon-color);
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-size: 1.75em;
+    font-weight: 1000;
+    font-style: normal;
+  }
+
+  .github-link:hover {
+    color: var(--github-active-link);
+  }
+
+  .github-icon {
+    color: var(--github-icon-color);
+  }
+
+  .lines {
+    flex-grow: 4;
+    border: 1.5px solid var(--github-lines);
+    color: var(--github-lines);
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: flex-start;
+    gap: 2em;
+    width: 100%;
+    min-height: 80vh;
+  }
 }

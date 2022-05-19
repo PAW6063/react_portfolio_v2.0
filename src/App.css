@@ -1,11 +1,32 @@
 :root {
   --bg-color: rgb(37, 37, 37);
+  --header-color: rgb(126, 255, 255);
 }
 
 body {
   background-color: var(--bg-color);
 }
 
-.App {
-  margin-bottom: 10vh;
+@media only screen and (max-width: 600px) {
+  .App {
+    margin-bottom: 4em;
+  }
+  
+  .main-header {
+    color: var(--header-color);
+    align-self: flex-start;
+    font-size: 2.5em;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .App {
+    margin-bottom: 2em;
+  }
+  
+  .main-header {
+    color: var(--header-color);
+    align-self: flex-start;
+    font-size: 3em;
+  }
 }

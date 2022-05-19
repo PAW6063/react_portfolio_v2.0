@@ -6,63 +6,112 @@
     --linkedin-color: rgb(14, 118, 168);
 }
 
-
-.footer {
-    background-color: var(--footer-bg-color);
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+    .footer {
+        background-color: var(--footer-bg-color);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-
-    height: 30vh;
-}
-
-.footer-link-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
-
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 4vh 0 0 0;
-    padding: 1em;
-    width: 90%;
-}
-
-.footer-link {
+        height: 30vh;
+    }
     
-}
-
-.footer-link-item {
+    .footer-link-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
     
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 4vh 0 0 0;
+        padding: 1em;
+        width: 90%;
+    }
+    
+    .footer-icon {
+        color:black;
+        background-color: var(--footer-bg-color);
+        height: 2em;
+    }
+    
+    .icon-1 {
+        color: var(--linkedin-color);
+    }
+    
+    .icon-2 {
+        color: var(--github-color);
+    }
+    
+    .icon-3 {
+        color: var(--twitter-color);
+    }
+    
+    .footer-copyright {
+        font-family: "Exo 2";
+        font-style: italic;
+        font-size: medium;
+    }
 }
 
-.footer-icon {
-    color:black;
-    background-color: var(--footer-bg-color);
-    height: 5vh;
-}
-
-.icon-1 {
-    color: var(--linkedin-color);
-}
-
-.icon-2 {
-    color: var(--github-color);
-}
-
-.icon-3 {
-    color: var(--twitter-color);
-}
-
-.footer-copyright {
-    font-family: "Exo 2";
-    font-style: italic;
-    font-size: medium;
-}
+/* Desktop CSS */
+@media only screen and (min-width: 601px) {
+    .footer {
+        background-color: var(--footer-bg-color);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    
+        height: 30vh;
+    }
+    
+    .footer-link-list {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+    
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 4vh 0 0 0;
+        padding: 1em;
+        width: 90%;
+    }
+    
+    .footer-icon {
+        color:black;
+        background-color: var(--footer-bg-color);
+        height: 3em;
+    }
+    
+    .icon-1 {
+        color: var(--linkedin-color);
+    }
+    
+    .icon-2 {
+        color: var(--github-color);
+    }
+    
+    .icon-3 {
+        color: var(--twitter-color);
+    }
+    
+    .footer-copyright {
+        font-family: "Exo 2";
+        font-style: italic;
+        font-size: 20px;
+    }
+} 

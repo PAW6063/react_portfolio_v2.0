@@ -18,7 +18,7 @@ import "./Resume.css";
 export default function Resume() {
   return (
     <div className="resume">
-      <h1 className="resume-header">{"<Resumé/>"}</h1>
+      <h1 className="main-header">{"<Resumé/>"}</h1>
 
       <h3 className="resume-sub-header">Hiring?? Here's my resumé!</h3>
       <div className="resume-resume">
@@ -33,20 +33,40 @@ export default function Resume() {
       </div>
 
       <h2 className="resume-header">Technologies</h2>
-      <ul className="resume-list">
-        <li className="resume-list-item">React.js</li>
-        <li className="resume-list-item">HTML</li>
-        <li className="resume-list-item">CSS</li>
-        <li className="resume-list-item">Javascript</li>
-        <li className="resume-list-item">Bootstrap</li>
-        <li className="resume-list-item">Node.js</li>
-        <li className="resume-list-item">Express.js</li>
-        <li className="resume-list-item">MongoDB</li>
-        <li className="resume-list-item">GraphQL</li>
-        <li className="resume-list-item">mySQL</li>
-        <li className="resume-list-item">C</li>
-        <li className="resume-list-item">C++</li>
-      </ul>
+      <table className="resume-table">
+        <thead className="resume-thead">
+          <th className="resume-cells">Languages</th>
+          <th className="resume-cells">Front-End</th>
+          <th className="resume-cells">Back-End</th>
+        </thead>
+        <tbody className="resume-tbody">
+          <tr className="resume-rows">
+            <td className="resume-cells">HTML</td>
+            <td className="resume-cells">React.js</td>
+            <td className="resume-cells">Node.js</td>
+          </tr>
+          <tr className="resume-rows">
+            <td className="resume-cells">CSS</td>
+            <td className="resume-cells">Bootstrap</td>
+            <td className="resume-cells">Express.js</td>
+          </tr>
+          <tr className="resume-rows">
+            <td className="resume-cells">JavaScript</td>
+            <td className="resume-cells"></td>
+            <td className="resume-cells">MongoDB</td>
+          </tr>
+          <tr className="resume-rows">
+            <td className="resume-cells">Python</td>
+            <td className="resume-cells"></td>
+            <td className="resume-cells">GraphQL</td>
+          </tr>
+          <tr className="resume-rows">
+            <td className="resume-cells">C++</td>
+            <td className="resume-cells"></td>
+            <td className="resume-cells">mySQL</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }

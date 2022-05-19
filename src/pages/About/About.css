@@ -6,62 +6,105 @@
   --about-link-hover: rgb(126, 255, 255);
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
+/* Mobile css*/
+@media only screen and (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 
-  margin: 5vh 5vw;
-  min-height: 80vh;
+    margin: 5vh 5vw;
+    min-height: 80vh;
 
-  font-family: "Exo 2";
-  font-style: italic;
-}
+    font-family: "Exo 2";
+    font-style: italic;
+  }
 
-.about-picture {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-}
+  .about-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 2em;
+  }
 
-.about-header {
-  color: var(--about-header-color);
-  align-self: flex-start;
-}
+  .main-header {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+  }
 
-.about-h {
-  color: var(--about-h-color);
-  align-self: flex-start;
-}
+  .about-h {
+    color: var(--about-h-color);
+    align-self: flex-start;
+    font-size: 1.75em;
+  }
 
-.about-p {
-  color: var(--about-p-color);
-}
+  .about-p {
+    color: var(--about-p-color);
+    font-size: 1.2em;
+  }
 
-.about-github-projects {
-  color: var(--about-link-color);
-  text-decoration: none;
-}
-
-.about-github-projects:hover {
-    color: var(--about-link-hover);
+  .about-github-projects {
+    color: var(--about-link-color);
     text-decoration: none;
   }
 
-.h-2 {
+  .about-github-projects:hover {
+    color: var(--about-link-hover);
+    text-decoration: none;
+  }
 }
 
-.h-3 {
-}
+/* Desktop CSS */
+@media only screen and (min-width: 601px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
 
-.p-1 {
-}
+    margin: 5vh auto;
+    min-height: 80vh;
+    width: 70%;
+    max-width: 1000px;
 
-.p-2 {
-}
+    font-family: "Exo 2";
+    font-style: italic;
+  }
 
-.p-3 {
+  .about-picture {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+  }
+
+  .main-header {
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  .about-h {
+    color: var(--about-h-color);
+    align-self: flex-start;
+    font-size: 2.2em;
+  }
+
+  .about-p {
+    color: var(--about-p-color);
+    font-size: 1.5em;
+  }
+
+  .about-github-projects {
+    color: var(--about-link-color);
+    text-decoration: none;
+  }
+
+  .about-github-projects:hover {
+    color: var(--about-link-hover);
+    text-decoration: none;
+  }
 }

@@ -12,7 +12,7 @@ import Projects from "../../components/Projects/Projects.js";
 export default function Portfolio() {
   return (
     <div className="portfolio">
-      <h1 className="portfolio-header">{"<Portfolio/>"}</h1>
+      <h1 className="main-header">{"<Portfolio/>"}</h1>
       <div className="github-link-container">
         <hr className="lines" />
         <Link

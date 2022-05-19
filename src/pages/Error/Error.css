@@ -9,6 +9,15 @@
     --contact-button-color: rgb(126, 255, 255);
 }
 
+/* Mobile CSS */
+@media only screen and (max-width: 600px) {
+
+}
+/* Desktop CSS */
+@media only screen and (min-width: 601px) {
+
+} 
+
 .error {
     display: flex;
     flex-direction: column;

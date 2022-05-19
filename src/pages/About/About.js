@@ -12,7 +12,7 @@ export default function About() {
         alt="This is me."
       />
 
-      <h1 className="about-header h-1">{"<About Me/>"}</h1>
+      <h1 className="main-header">{"<About Me/>"}</h1>
       <p className="about-p p-1">
         Full stack web developer recently completed UT Austin coding bootcamp to
         receive my certificate. Through completing this bootcamp, I have become

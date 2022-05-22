@@ -58,6 +58,7 @@
         opacity: .75;
         margin-bottom: 1em;
         font-size: 1.1em;
+        z-index: -1;
     }
     
     .info-link:hover {
@@ -174,6 +175,7 @@
         opacity: .75;
         margin-bottom: 1em;
         font-size: 1.4em;
+        z-index: -1;
     }
     
     .info-link:hover {

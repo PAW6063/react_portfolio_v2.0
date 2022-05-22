@@ -22,7 +22,7 @@ export default function Resume() {
 
       <h3 className="resume-sub-header">Hiring?? Here's my resumé!</h3>
       <div className="resume-resume">
-        <p className="resume-p">Resumé</p>
+        <h4 className="resume-h4">Resumé</h4>
       <a
           className="resume-download"
           href="./assets/resume/PhillipWelch.pdf"
@@ -33,40 +33,20 @@ export default function Resume() {
       </div>
 
       <h2 className="resume-header">Technologies</h2>
-      <table className="resume-table">
-        <thead className="resume-thead">
-          <th className="resume-cells">Languages</th>
-          <th className="resume-cells">Front-End</th>
-          <th className="resume-cells">Back-End</th>
-        </thead>
-        <tbody className="resume-tbody">
-          <tr className="resume-rows">
-            <td className="resume-cells">HTML</td>
-            <td className="resume-cells">React.js</td>
-            <td className="resume-cells">Node.js</td>
-          </tr>
-          <tr className="resume-rows">
-            <td className="resume-cells">CSS</td>
-            <td className="resume-cells">Bootstrap</td>
-            <td className="resume-cells">Express.js</td>
-          </tr>
-          <tr className="resume-rows">
-            <td className="resume-cells">JavaScript</td>
-            <td className="resume-cells"></td>
-            <td className="resume-cells">MongoDB</td>
-          </tr>
-          <tr className="resume-rows">
-            <td className="resume-cells">Python</td>
-            <td className="resume-cells"></td>
-            <td className="resume-cells">GraphQL</td>
-          </tr>
-          <tr className="resume-rows">
-            <td className="resume-cells">C++</td>
-            <td className="resume-cells"></td>
-            <td className="resume-cells">mySQL</td>
-          </tr>
-        </tbody>
-      </table>
+      <ul className="resume-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>C++/C</li>
+        <li>Python</li>
+        <li>MongoDB</li>
+        <li>Express.js</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Bootstrap</li>
+        <li>GraphQL</li>
+        <li>mySQL</li>
+      </ul>
     </div>
   );
 }

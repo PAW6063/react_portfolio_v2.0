@@ -1,0 +1,23 @@
+{
+    "name": "react_portfolio_v2.0_server",
+    "version": "2.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js",
+      "watch": "nodemon",
+      "seed": "node seeders/seed.js"
+    },
+    "author": "PAW6063",
+    "license": "MIT",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.17.1",
+      "nodemailer": "^6.7.2",
+      "dotenv": "^10.0.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.3"
+    }
+  }
+  

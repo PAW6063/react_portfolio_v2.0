@@ -92,7 +92,14 @@ export default function Contact() {
         Message Me!
         {/* <span className="under-maintance">(Under Maintance)</span> */}
       </h2>
-      <form className="contact-form" onSubmit={handleSubmitForm}>
+      <form
+        className="contact-form"
+        onSubmit={handleSubmitForm}
+        name="contact"
+        action="/"
+        method="POST"
+        data-netlify="true"
+      >
         <label className="form-label name-label">Name</label>
         <input
           type="text"

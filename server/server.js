@@ -77,7 +77,7 @@ if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
 }
 
-app.use(router);
+app.use("/", router);
 
 app.listen(PORT, () => {
   console.log(`Application listening on port ${PORT}...`);

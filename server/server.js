@@ -6,7 +6,7 @@ const creds = require("./config");
 
 var transport = {
   host: "smtp.mailtrap.io",
-  port: 25 || 465 || 587 || 2525,
+  port: 2525,
   auth: {
     user: creds.USER,
     pass: creds.PASS,
@@ -30,7 +30,7 @@ router.post("/contact", (req, res, next) => {
 
   var mail = {
     from: email,
-    to: creds.MYEMAIL,
+    to: creds.EMAIL,
     subject: "New Message from Contact Form",
     text: `${name}\n\n${message}`,
   };
@@ -67,7 +67,18 @@ router.post("/contact", (req, res, next) => {
 const PORT = process.env.PORT || 3001;
 
 const app = express();
+const path = require('path');
+
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(express.json());
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
 app.use("/", router);
-app.listen(PORT);
+
+app.listen(PORT, () => {
+  console.log(`Application listening on port ${PORT}...`);
+});

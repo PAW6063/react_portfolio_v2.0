@@ -47,7 +47,7 @@ export default function Contact() {
     })
       .then((response) => response.json())
       .then((response) => {
-        console.log(response)
+        console.log(response);
         if (response.status === "success") {
           resetForm();
         } else if (response.status === "fail") {
@@ -89,9 +89,10 @@ export default function Contact() {
       </ul>
 
       <h2 className="contact-header">
-        Message Me!{/* <span className="under-maintance">(Under Maintance)</span> */}
+        Message Me!
+        {/* <span className="under-maintance">(Under Maintance)</span> */}
       </h2>
-      <form className="contact-form" onSubmit={handleSubmitForm} method="POST">
+      <form className="contact-form" onSubmit={handleSubmitForm}>
         <label className="form-label name-label">Name</label>
         <input
           type="text"

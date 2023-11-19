@@ -26,7 +26,7 @@ export default function Resume() {
       <a
           className="resume-download"
           href="./assets/resume/PhillipWelch.pdf"
-          download="PhillipWelch.pdf"
+          download="Phillip_Welch.pdf"
         >
           <FontAwesomeIcon icon={faDownload} className="resume-icon" />
         </a>

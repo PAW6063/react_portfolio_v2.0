@@ -25,7 +25,7 @@ export default function Resume() {
         <h4 className="resume-h4">Resumé</h4>
       <a
           className="resume-download"
-          href="./assets/resume/PhillipWelch.pdf"
+          href="./assets/resume/Phillip_Welch.pdf"
           download="Phillip_Welch.pdf"
         >
           <FontAwesomeIcon icon={faDownload} className="resume-icon" />
